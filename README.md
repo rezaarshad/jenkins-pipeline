@@ -1,6 +1,13 @@
 # jenkins-pipeline
 jenkins shared library example for maven based prject
 
+## Plugin (need to be installed)
+
+https://plugins.jenkins.io/http_request  
+https://plugins.jenkins.io/ssh-agent  
+https://plugins.jenkins.io/email-ext  
+https://plugins.jenkins.io/maven-plugin  
+https://plugins.jenkins.io/pipeline-maven
 
 ## sample:
 
