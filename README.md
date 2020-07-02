@@ -1,4 +1,4 @@
-# jenkins-pipeline  
+# jenkins pipeline shared library 
 jenkins shared library example for maven based prject
 
 ## Plugins (need to be installed)
