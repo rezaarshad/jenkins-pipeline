@@ -1,5 +1,5 @@
 # jenkins pipeline shared library 
-This repository is an example for deploying maven based prohjects using Jenkins.
+This repository is an example for deploying maven based projects using Jenkins.
 
 ## Plugins (need to be installed on Jenkins)
 
