@@ -1,7 +1,7 @@
 # jenkins pipeline shared library 
-jenkins shared library example for maven based prject
+This repository is an example for deploying maven based prohjects using Jenkins.
 
-## Plugins (need to be installed)
+## Plugins (need to be installed on Jenkins)
 
 https://plugins.jenkins.io/http_request  
 https://plugins.jenkins.io/ssh-agent  
@@ -9,7 +9,7 @@ https://plugins.jenkins.io/email-ext
 https://plugins.jenkins.io/maven-plugin  
 https://plugins.jenkins.io/pipeline-maven
 
-## sample:
+## How to run:
 
 @Library(jenkins-pipeline) _  
 MvnPipeline(branch: 'master',  
