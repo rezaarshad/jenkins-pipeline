@@ -9,21 +9,19 @@ https://plugins.jenkins.io/email-ext
 https://plugins.jenkins.io/maven-plugin  
 https://plugins.jenkins.io/pipeline-maven
 
-## How to run:
+## How to import and use this library:
 
-<code>
-@Library(jenkins-pipeline) _  
+@Library(jenkins-pipeline) _
+  
 MvnPipeline(branch: 'master',  
-gitUrl: 'git url',  
-type: 'mvn',  
-deployType: '',  
-email: '',  
+gitUrl: 'git url',  type: 'mvn',  
+deployType: '',  email: '',  
 serverPort: '8080',  
 developmentServer: 'server1',  
 stagingServer: 'server2',  
 productionServer: 'server3',  
-appName: '',  
+appName: '',   
 deployInDev:true,  
 deployInStage:false,  
-deployInProduction:false)  
-<code>
+deployInProduction:false)    
+
