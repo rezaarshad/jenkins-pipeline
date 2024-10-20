@@ -1,27 +1,34 @@
-# Jenkins pipeline shared library 
-This repository is an example for deploying maven based projects using Jenkins.
+# Jenkins Pipeline Shared Library
 
-## Plugins
+This repository provides an example of deploying Maven-based projects using Jenkins.
 
-https://plugins.jenkins.io/http_request  
-https://plugins.jenkins.io/ssh-agent  
-https://plugins.jenkins.io/email-ext  
-https://plugins.jenkins.io/maven-plugin  
-https://plugins.jenkins.io/pipeline-maven
+## Required Plugins
 
-## How to import and use this library:
+- [HTTP Request](https://plugins.jenkins.io/http_request)  
+- [SSH Agent](https://plugins.jenkins.io/ssh-agent)  
+- [Email Extension](https://plugins.jenkins.io/email-ext)  
+- [Maven Plugin](https://plugins.jenkins.io/maven-plugin)  
+- [Pipeline Maven Integration](https://plugins.jenkins.io/pipeline-maven)
 
-@Library(jenkins-pipeline) _
-  
-MvnPipeline(branch: 'master',  
-gitUrl: 'git url',  type: 'mvn',  
-deployType: '',  email: '',  
-serverPort: '8080',  
-developmentServer: 'server1',  
-stagingServer: 'server2',  
-productionServer: 'server3',  
-appName: '',   
-deployInDev:true,  
-deployInStage:false,  
-deployInProduction:false)    
+## How to Import and Use the Library
 
+To import and use this shared library in your Jenkins pipeline:
+
+```groovy
+@Library('jenkins-pipeline') _
+
+MvnPipeline(
+  branch: 'master',
+  gitUrl: 'git url',
+  type: 'mvn',
+  deployType: '',
+  email: '',
+  serverPort: '8080',
+  developmentServer: 'server1',
+  stagingServer: 'server2',
+  productionServer: 'server3',
+  appName: '',
+  deployInDev: true,
+  deployInStage: false,
+  deployInProduction: false
+)
